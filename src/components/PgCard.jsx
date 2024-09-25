@@ -24,7 +24,7 @@ const PgCard = ({ pgDetails }) => {
            <small>Starts at</small>
            <p className='PriceTag'>₹{pgDetails.doubleSharingPrice} </p>
            </div>
-              <p className='discount'>{pgDetails.discount || "14% OFF" }</p>
+              <p className='discount'>{pgDetails.discount || "UPTO 14% OFF" }</p>
             
           </div>
           <div>

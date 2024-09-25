@@ -272,9 +272,12 @@
   
 }
 .discount{
-  font-size: 13px;
-  color: #ff0000;
+  font-size: 11px !important;
+  color: #ffffff;
   margin-left: 10px;
+  background-color: #00cf23;
+  padding: 5PX;
+  border-radius: 3px;
 }
 .heroThree{
   width: 100%;
