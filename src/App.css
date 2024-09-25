@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+.container-width {
+  width: 75%;
+  margin: 0 auto;
+}
+.navWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  margin: 0 auto;
+  width: 75%;
+}
+.logo{
+  width: 80px;
+}
+.navLinksWrapper {
+  display: flex;
+  text-transform: uppercase;
+  gap: 25px;
+}
+.navLinksWrapper a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  position: relative;
+  font-weight: 500;
+  padding-bottom: 3px;
+}
+
+.navbarGetAcallBtn{
+  height: 45px;
+  width: 130px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+/* hero section one css  */
+.heroOne{
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-image: url('https://alexandro.in/image/delhi/covie-east-of-kailash-52/1.jpg');
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.heroOne::after {
+  height: 100%;
+  width: 100%;
+  background-color: #0000009d;
+  content: '';
+  position: absolute;
+  left: 0;
+}
+.heroOne-left, .heroOne-right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9;
+}
+.heroOne-left {
+  justify-content: start;
+  padding-left: 50px;
+}
+.heroOneTitle{
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.heroOneDips{
+  font-size: 15px;
+  margin-top: 20px;
+}
+.explorePgBtn{
+  background-color: #ffffff;
+  height: 40px;
+  width: 130px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.heroOneDips {
+  color: #fff;
+  font-size: 17px;
+}
+.prasence{
+  width: 100%;
+  height: 30vh;
+  margin: 0 auto;
+}
+.prasenceTitle {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 50px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.allCities {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  
+}
+.city{
+  height: 150px;
+  width: 250px;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.city:hover .cityImage {
+  scale: 1.1;
+}
+.cityImage{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.cityName {
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+.city{
+  position: relative;
+}
+
+.PrasencecityName{
+  height: 100%;
+  width: 100%;
+  background-color: #00000060;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+.city:hover .PrasencecityName {
+  opacity: 1;
+}
+.propertyOverview{
+  color: #09136e;
+}
+/* hero section two   */
+.heroTwo{
+  min-height: 50vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.herotwo-left , .herotwo-right{
+  height: 100%;
+  width: 50%;
+
+}
+.herotwo-right {
+  padding: 30px;
+}
+.herotwo-left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.whyChooseUsTitle{
+  font-size: 28px;
+  font-weight: 500;
+}
+.quilityTitle{
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* section three  */
+.sectionThree{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.sectionthree-left, .sectionthree-right {
+  height: 100%;
+}
+.sectionthree-left {
+  width: 70%;
+}
+.sectionthree-right {
+  width: 30%;
+
+  border-radius: 10px;
+  border: 1px solid ;
+  padding: 5px;
+}
+.sectionthree-right iframe {
+  height: 100%;
+  border: none;
+  width: 100%;
+}
+
+
+/* pg card coponents css  */
+.pgCard{
+  height: 380px;
+  width: 330px;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  /* background-color: #f7f7f791; */
+  padding: 10px;
+  box-shadow: 0px 0px 10px #dddddd;
+}
+.otherInfo{
+  padding-top: 10px;
+}
+.pgCardImg{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+.pgImageWrapper{
+  overflow: hidden;
+  border-radius: 15px;
+}
+.pgCardTitle h3 {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0;
+}
+.price {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.price p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  
+}
+.discount{
+  font-size: 13px;
+  color: #ff0000;
+  margin-left: 10px;
+}
+.heroThree{
+  width: 100%;
+  margin-bottom: 40px;
+}
+.sectionThreePropertyWrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.heroThreeTitle {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-transform:capitalize ;
+}
+.GotoPgPage{
+  height: 30px;
+  width: 100px;
+  background-color: #000000;
+  border-radius: 25px;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pgCard::after {
+  height: 20px;
+  padding: 5px;
+  content: 'Unisex';
+  background-color: rgba(173, 235, 235, 0.788);
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  left: 0;
+  display: none;
+}
+.Explore-more-property {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+.Explore-more-property p{
+  height: 45px;
+  width: 150px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.pgCardImg:hover {
+  scale: 1.1;
+  transition: 0.2s ease-in-out;
+}
+/* offer components  */
+.offerTitle {
+  font-size: 25px;
+  font-weight: 500;
+}
+.offer{
+  font-size: 20px;
+  font-weight: 500;
+}
+.allOffers{
+  list-style: none;
+}
+.allOffers li {
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #c9c9c99a;
+  padding: 20px;
+  border-radius: 15px;
+  padding-left: 10px;
+  position: relative;
+  height: 125px;
+  font-size: 14px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+.offerSection {
+  margin: 20px 0;
+  padding: 20px 0;
+}
+.offerDips {
+  margin-top: 10px;
+}
+.expendOffer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 25px;
+  margin: 20px;
+}
+.termsAndCondition{
+  margin-top: 20px;
+  font-weight: 500;
+}
+.termsAndcondition {
+  height: 270px !important;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.PriceTag{
+  font-weight: 600;
+}
+
+/* footer  */
+.footer{
+  height: 50vh;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+}
+.footer p , a {
+  font-size: 13px;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+}
+.footerLogo img{
+  width: 120px;
+}
+.footerWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+  padding: 100px 0;
+}
+.footerParts{
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+}
+.footerParts ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footerLastBox{
+  display: flex; 
+  gap: 10px;
+  font-weight: 300;
+}
+.footerLinkTitleAndLink h3 {
+  font-weight: 400;
+}
+.footerLastBox{ 
+  margin-top: 20px;
+}
+.footerLastBoxh4 {
+  font-weight: 400;
+}
+.footericons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.footericons i{
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+}

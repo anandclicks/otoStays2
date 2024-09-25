@@ -1,0 +1,16 @@
+
+@media (max-width : 1440px) {
+  .container-width {
+    width: 90%;
+  }
+  .pgCard{
+    width: 270px;
+  }
+}
+
+@media (max-width : 700px) {
+  .container-width {
+    width: 100%;
+  }
+}
+
