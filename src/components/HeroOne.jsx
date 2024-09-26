@@ -3,6 +3,7 @@ import React from 'react'
 const HeroOne = () => {
   return (
    <div className='heroOne'>
+    <video autoPlay muted loop src="\HomeVideo\video1.mp4"></video>
     {/* left sidem */}
     <div className="heroOne-left">
       <div className="box">

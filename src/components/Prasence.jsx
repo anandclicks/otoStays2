@@ -5,6 +5,7 @@ const Prasence = () => {
   return (
     <div className='prasence'>
       <h1 className='prasenceTitle'>Here to <span className='propertyOverview'>help</span></h1>
+      <div className="allCityWrapper">
       <div className="allCities">
         <Link className='city'>
         <img className='cityImage' src="\Cityimages\noida.jpg" alt="" />
@@ -26,6 +27,7 @@ const Prasence = () => {
         <img className='cityImage' src="\Cityimages\ghaziabad.jpg" alt="" />
         <div className="PrasencecityName">Ghaziabad</div>
         </Link>
+      </div> 
       </div>
     </div>
   )

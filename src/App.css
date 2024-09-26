@@ -40,29 +40,42 @@
   background-color: #000;
   color: #fff;
   border: none;
+  font-size: 13px;
   cursor: pointer;
   border-radius: 2px;
   text-transform: uppercase;
 }
-
+.menuBtn {
+  display: none;
+}
 /* hero section one css  */
 .heroOne{
   height: 80vh;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  background-image: url('https://alexandro.in/image/delhi/covie-east-of-kailash-52/1.jpg');
+  /* background-image: url('https://alexandro.in/image/delhi/covie-east-of-kailash-52/1.jpg'); */
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
+.heroOne video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
 .heroOne::after {
   height: 100%;
   width: 100%;
-  background-color: #0000009d;
+  background-color: #000000b2;
   content: '';
   position: absolute;
   left: 0;
+  z-index: 2;
 }
 .heroOne-left, .heroOne-right {
   height: 100%;
@@ -72,6 +85,10 @@
   justify-content: center;
   position: relative;
   z-index: 9;
+}
+.heroOne-left .box {
+  z-index: 99;
+  position: relative;
 }
 .heroOne-left {
   justify-content: start;
@@ -104,6 +121,7 @@
   color: #fff;
   font-size: 17px;
 }
+/* prasence div  */
 .prasence{
   width: 100%;
   height: 30vh;
@@ -185,6 +203,9 @@
   width: 50%;
 
 }
+.herotwo-right ul {
+  list-style: none;
+}
 .herotwo-right {
   padding: 30px;
 }
@@ -192,6 +213,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 15px;
 }
 .whyChooseUsTitle{
   font-size: 28px;
@@ -231,7 +253,7 @@
 
 /* pg card coponents css  */
 .pgCard{
-  height: 380px;
+  height: 390px;
   width: 330px;
   cursor: pointer;
   border-radius: 10px;
@@ -272,7 +294,7 @@
   
 }
 .discount{
-  font-size: 11px !important;
+  font-size: 10px !important;
   color: #ffffff;
   margin-left: 10px;
   background-color: #00cf23;
@@ -297,8 +319,8 @@
   text-transform:capitalize ;
 }
 .GotoPgPage{
-  height: 30px;
-  width: 100px;
+  height: 40px;
+  width: 120px;
   background-color: #000000;
   border-radius: 25px;
   color: #fff;
@@ -400,7 +422,7 @@
 
 /* footer  */
 .footer{
-  height: 50vh;
+  min-height: 50vh;
   width: 100%;
   background-color: #000000;
   color: #fff;
@@ -440,8 +462,11 @@
   gap: 10px;
   font-weight: 300;
 }
-.footerLinkTitleAndLink h3 {
+.footerLinkTitleAndLink h3, h4 {
   font-weight: 400;
+}
+.footerLinkTitleAndLink ul a{
+  font-size: 13px;
 }
 .footerLastBox{ 
   margin-top: 20px;
@@ -458,4 +483,87 @@
   display: flex;
   gap: 15px;
   font-size: 22px;
+}
+
+
+/* testimonial css  */
+.testimonial-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1200px; /* Adjusted to accommodate larger boxes */
+}
+
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.testimonial-box {
+  width: 400px;
+  height: 250px;
+  margin: 10px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(214, 214, 214);
+  padding: 10px;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .testimonial-box {
+    width: 350px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial-box {
+    width: 300px;
+    height: 200px;
+  }
+}
+.quote {
+  width: 25px;
+}
+.ratting{
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  align-items: center;
+}
+.comment{
+  font-size: 14px;
+}
+.nameOFRattingPerson{
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.feedBakcTitle{
+  font-size: 25px;
+  font-weight: 500;
 }

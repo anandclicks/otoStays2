@@ -17,7 +17,10 @@ const Navbar = () => {
         </ul>
       </div>
       {/* right side  */}
-      <div className="navRight"><button className='navbarGetAcallBtn'>Get a call</button></div>
+      <div className="navRight">
+        <button className='navbarGetAcallBtn'>Get a call</button>
+        <img className='menuBtn' src="\Amenties Svg\menu.png" alt="" />
+      </div>
     </div>
   )
 }

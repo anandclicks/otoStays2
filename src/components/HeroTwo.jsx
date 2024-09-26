@@ -13,14 +13,14 @@ const HeroTwo = () => {
         <ul>
           <li>
             <h2 className='quilityTitle'>Friendly Environment</h2>
-            Enjoy a warm and welcoming community where you feel right at home from day one</li>
+            <p>Enjoy a warm and welcoming community where you feel right at home from day one</p></li>
           <li>
             <h2 className='quilityTitle'>Hassle-Free
             Brokerage</h2>
-            Skip the paperwork and extra costs—our services arestraightforward with no hidden fees.</li>
+            <p>Skip the paperwork and extra costs—our services arestraightforward with no hidden fees.</p></li>
           <li>
             <h2 className='quilityTitle'>Brokerage Accommodation</h2>
-            Relish well-prepared meals and comfortable living spaces, all designed to enhance Easy on your daily life.</li>
+            <p>Relish well-prepared meals and comfortable living spaces, all designed to enhance Easy on your daily life.</p></li>
         </ul>
       </div>
     </div>

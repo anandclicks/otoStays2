@@ -6,11 +6,182 @@
   .pgCard{
     width: 270px;
   }
+ 
 }
 
 @media (max-width : 700px) {
   .container-width {
     width: 100%;
+  }
+  .navbarGetAcallBtn{
+    display: none;
+  }
+   .menuBtn{
+    width: 30px;
+  }
+  .navbMiddle {
+    display: none;
+  }
+  .logo{
+    width: 55px;
+  }
+  .navWrapper {
+    padding: 0 20px;
+    height: 80px;
+  }
+  .menuBtn{
+    display: flex;
+  }
+  /* hero one css mens first page of home  */
+  .heroOne {
+    border-radius: 0px;
+    flex-direction: column;
+    height: 60vh;
+  }
+  .heroOne-left, .heroOne-Right {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .heroOne-Right{
+    display: none;
+  }
+  .heroOneTitle {
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  .heroOneDips{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .explorePgBtn {
+    font-size: 14px;
+  }
+  .heroThree{
+    height: inherit;
+    margin: 0px !important;
+    padding: 0 20px;
+  }
+  .heroThreeTitle{
+    font-size: 16px;
+  }
+  .Explore-more-property p {
+    width: 110px;
+    height: 35px;
+    font-size: 11px;
+  }
+  .pgCard {
+    width: 100%;
+  }
+  /* hero section two mens 3rd page of home  */
+  .heroTwo{
+    flex-direction: column;
+    padding: 0 20px;
+    padding-top: 20px;
+  }
+  .herotwo-left , .herotwo-right{
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .whyChooseUsTitle{
+    font-size: 25px;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+  .herotwo-right ul li p {
+    font-size: 13px;
+  }
+  /* prasecne part  */
+  .prasence {
+    width: auto;
+    padding: 0 20px;
+    height: auto;
+  }
+  .prasenceTitle{
+    font-size: 16px;
+  }
+  .allCityWrapper{
+    overflow: scroll;
+  }
+  .allCityWrapper ::-webkit-scrollbar {
+    display: none;
+  }
+  .allCities{
+    display: flex;
+    overflow: scroll;
+    width: 300%;
+  }
+  .offerSection{
+    padding: 0 20px;
+    padding-top: 20px;
+  }
+  .offerTitle {
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+ 
+  .offer {
+    font-size: 16px;
+  }
+  .offerDips{
+    font-size: 11px;
+  }
+  .secondOffer {
+    height: 140px !important;
+  }
+  .thirdOffer{
+    height: 180px !important;
+  }
+  .termsAndcondition {
+    height: inherit !important;
+  }
+
+  /* feedback  */
+  .feedbackWrapper{
+    padding: 0 20px;
+  }
+  .feedBakcTitle {
+    font-size: 16px;
+  }
+  .testimonial-slider button {
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  .comment{
+    font-size: 13px;
+  }
+  .quote {
+    width: 20px;
+  }
+  .ratting p {
+    font-size: 11px;
+  }
+  .nameOFRattingPerson p {
+    font-size: 15px;
+  }
+  /* footer css  */
+  .footerWrapper {
+    padding:  20px;
+  }
+  .footerWrapper {
+    flex-direction: column;
+  }
+  .footerWrapper .footerParts {
+    width: 100%;
+  }
+  .footerLinkTitleAndLink{
+    margin-top: 25px;
+  }
+  .footerLinkTitleAndLink ul {
+    margin-top: 5px;
+    gap: 5px;
+  }
+  .footerLogo img {
+    width: 80px;
   }
 }
 
